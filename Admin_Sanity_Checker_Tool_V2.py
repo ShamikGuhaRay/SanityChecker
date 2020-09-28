@@ -20,7 +20,7 @@ current_time = start.strftime("%H:%M:%S")
 print("Starting AT ", current_time)
 logging.info('Starting AT  {}'.format(current_time))
 
-#Load urls from Excel File
+#Load urls from CSV File
 try:
  df = pd.read_csv('C:\\OCI_Scripts\\tenant_id_list.csv')
  tenantid = df['tenant_id'].tolist() #tenant_id is the column name
